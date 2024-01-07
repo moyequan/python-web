@@ -1,0 +1,269 @@
+{
+	"code": 200,
+	"data": [
+		{
+			"path": "/home/index",
+			"name": "home",
+			"component": "/home/index",
+			"meta": {
+				"icon": "HomeFilled",
+				"title": "首页",
+				"isLink": "",
+				"isHide": false,
+				"isFull": false,
+				"isAffix": true,
+				"isKeepAlive": true,
+				"roles":["admin","user"]
+			}
+		},
+		{
+			"path": "/dataScreen",
+			"name": "dataScreen",
+			"component": "/dataScreen/index",
+			"meta": {
+				"icon": "Histogram",
+				"title": "小区大屏",
+				"isLink": "",
+				"isHide": false,
+				"isFull": true,
+				"isAffix": false,
+				"isKeepAlive": true,
+				"roles":["admin","user"]
+			}
+		},
+		{
+			"path": "/community",
+			"name": "community",
+			"redirect": "/community/owner_info",
+			"meta": {
+				"icon": "List",
+				"title": "我的小区",
+				"isLink": "",
+				"isHide": false,
+				"isFull": false,
+				"isAffix": false,
+				"isKeepAlive": true,
+				"roles":["admin","user"]
+			},
+			"children": [
+				{
+					"path": "/community/owner_info",
+					"name": "owner_info",
+					"component": "/community/owner_info/index",
+					"meta": {
+						"icon": "Menu",
+						"title": "我的信息",
+						"isLink": "",
+						"isHide": false,
+						"isFull": false,
+						"isAffix": false,
+						"isKeepAlive": true,
+						"roles":["admin","user"]
+					}
+				},
+				{
+					"path": "/community/community_info",
+					"name": "community_info",
+					"component": "/community/community_info/index",
+					"meta": {
+						"icon": "Menu",
+						"title": "实时访客数量可视化",
+						"isLink": "",
+						"isHide": false,
+						"isFull": false,
+						"isAffix": false,
+						"isKeepAlive": true,
+						"roles":["admin","user"]
+					}
+				}
+			]
+		},
+		{
+			"path": "/information",
+			"name": "information",
+			"redirect": "/information/information1",
+			"meta": {
+				"icon": "List",
+				"title": "安防公告",
+				"isLink": "",
+				"isHide": false,
+				"isFull": false,
+				"isAffix": false,
+				"isKeepAlive": true,
+				"roles":["admin","user"]
+			},
+			"children": [
+				{
+					"path": "/information/information1",
+					"name": "information1",
+					"component": "/information/information1/index",
+					"meta": {
+						"icon": "Menu",
+						"title": "小区安防公告",
+						"isLink": "",
+						"isHide": false,
+						"isFull": false,
+						"isAffix": false,
+						"isKeepAlive": true,
+						"roles":["admin","user"]
+					}
+				},
+				{
+					"path": "/information/information2",
+					"name": "information2",
+					"component": "/information/information2/index",
+					"meta": {
+						"icon": "Menu",
+						"title": "发布安防公告",
+						"isLink": "",
+						"isHide": false,
+						"isFull": false,
+						"isAffix": false,
+						"isKeepAlive": true,
+						"roles":["admin"]
+					}
+				}
+			]
+		},
+		{
+			"path": "/staff",
+			"name": "staff",
+			"redirect": "/staff/staff1",
+			"meta": {
+				"icon": "List",
+				"title": "车辆人员",
+				"isLink": "",
+				"isHide": false,
+				"isFull": false,
+				"isAffix": false,
+				"isKeepAlive": true,
+				"roles":["admin","user"]
+			},
+			"children": [
+				{
+					"path": "/staff/staff1",
+					"name": "staff1",
+					"component": "/userInfo/residentInfo/index",
+					"meta": {
+						"icon": "Menu",
+						"title": "个人信息管理",
+						"isLink": "",
+						"isHide": false,
+						"isFull": false,
+						"isAffix": false,
+						"isKeepAlive": true,
+						"roles":["admin","user"]
+					}
+				},
+				{
+					"path": "/staff/staff5",
+					"name": "staff5",
+					"component": "/userInfo/committeeInfo/index",
+					"meta": {
+						"icon": "Menu",
+						"title": "业主信息管理",
+						"isLink": "",
+						"isHide": false,
+						"isFull": false,
+						"isAffix": false,
+						"isKeepAlive": true,
+						"roles":["admin"]
+					}
+				},
+				{
+					"path": "/staff/staff6",
+					"name": "staff6",
+					"component": "/infoUpload/uploadFile/index",
+					"meta": {
+						"icon": "Menu",
+						"title": "信息导入",
+						"isLink": "",
+						"isHide": false,
+						"isFull": false,
+						"isAffix": false,
+						"isKeepAlive": true,
+						"roles":["admin"]
+					}
+				},
+				{
+					"path": "/staff/staff2",
+					"name": "staff2",
+					"component": "/car_detailed/index",
+					"meta": {
+						"icon": "Menu",
+						"title": "业主车辆",
+						"isLink": "",
+						"isHide": false,
+						"isFull": false,
+						"isAffix": false,
+						"isKeepAlive": true,
+						"roles":["admin"]
+					}
+				},
+				{
+					"path": "/staff/staff3",
+					"name": "staff3",
+					"component": "/recognization/car_recognization/index",
+					"meta": {
+						"icon": "Menu",
+						"title": "车辆识别",
+						"isLink": "",
+						"isHide": false,
+						"isFull": false,
+						"isAffix": false,
+						"isKeepAlive": true,
+						"roles":["admin"]
+					}
+				},
+				{
+					"path": "/staff/staff4",
+					"name": "staff4",
+					"component": "/recognization/face_recognization/index",
+					"meta": {
+						"icon": "Menu",
+						"title": "人脸识别",
+						"isLink": "",
+						"isHide": false,
+						"isFull": false,
+						"isAffix": false,
+						"isKeepAlive": true,
+						"roles":["admin"]
+					}
+				}
+			]
+		},
+		{
+			"path": "/link",
+			"name": "link",
+			"redirect": "/link/gitee",
+			"meta": {
+				"icon": "Paperclip",
+				"title": "外部链接",
+				"isLink": "",
+				"isHide": false,
+				"isFull": false,
+				"isAffix": false,
+				"isKeepAlive": true,
+				"roles":["admin","user"]
+			},
+			"children": [
+				{
+					"path": "/link/github",
+					"name": "github",
+					"component": "/link/github/index",
+					"meta": {
+						"icon": "Menu",
+						"title": "GitHub 仓库",
+						"isLink": "https://github.com/moyequan/python-web.git",
+						"isHide": false,
+						"isFull": false,
+						"isAffix": false,
+						"isKeepAlive": true,
+						"roles":["admin","user"]
+					}
+				}
+			]
+		}
+	],
+	"msg": "成功"
+}
